@@ -215,7 +215,10 @@ patch(create_reverse_many_to_one_manager, _create_reverse_many_to_one_manager)
 
 
 def parse_forward_many_to_one_get(args, kwargs, context):
-    descriptor, instance, _ = args
+    if len(args) == 2:
+        descriptor, instance = args
+    else:
+        descriptor, instance, _ = args
     if instance is None:
         return None
     field, model = parse_reverse_field(descriptor.field)
