@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "nplusone"
+version = "0.1.0"
+description = ""
+authors = ["camjw <camjw119@gmail.com>"]
+license = "UNLICENSED"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mock = "^4.0.3"
+pytest = "^6.2.5"
+WebTest = "^3.0.0"
+pytest-cov = "^3.0.0"
+pytest-django = "^4.4.0"
+pytest-pythonpath = "^0.7.3"
+django-webtest = "^1.9.8"
+tox = "^3.24.4"
+flake8 = "^4.0.1"
+Django = "^3.2.9"
+invoke = "^1.6.0"
+blinker = "^1.4"
+SQLAlchemy = "^1.4.26"
+peewee = "^3.14.8"
+Flask = "^2.0.2"
+Flask-SQLAlchemy = "^2.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
