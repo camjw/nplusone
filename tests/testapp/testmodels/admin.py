@@ -1,36 +1,32 @@
 from django.contrib import admin
 
-from .models import User, Pet, Allergy, Occupation, Address, Hobby
+from .models import Address, Allergy, Hobby, Occupation, Pet, User
 
-class HobbyInline(admin.TabularInline):
-    model = Hobby
-    extra = 1
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    inlines = [HobbyInline]
+    pass
 
-class UserInline(admin.TabularInline):
-    model = User
-    extra = 1
 
 @admin.register(Pet)
 class PetAdmin(admin.ModelAdmin):
-    inlines = [UserInline]
+    pass
 
 
 @admin.register(Allergy)
 class AllergyAdmin(admin.ModelAdmin):
     pass
 
+
 @admin.register(Occupation)
 class OccupationAdmin(admin.ModelAdmin):
-    inlines = [UserInline]
+    pass
 
 
 @admin.register(Address)
 class AddressAdmin(admin.ModelAdmin):
-    inlines = [UserInline]
+    pass
+
 
 @admin.register(Hobby)
 class HobbyAdmin(admin.ModelAdmin):
