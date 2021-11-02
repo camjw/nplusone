@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     "nplusone.ext.django",
     "testmodels",
     "testapp",
+    "admin_auto_filters",
 )
 
 MIDDLEWARE = (
