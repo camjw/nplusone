@@ -3,30 +3,6 @@ from django.contrib import admin
 
 from .models import Address, Allergy, Hobby, Occupation, Pet, User
 
-# class WorkExperienceBulletInline(BaseTabularInline):
-#     model = WorkExperienceBullet
-
-
-# class OwnerFilter(AutocompleteFilter):
-#     title = "Owner"
-#     field_name = "owner"
-
-
-# @admin.register(WorkExperience)
-# class WorkExperienceAdmin(BaseAdmin):
-#     model = WorkExperience
-#     autocomplete_fields = ["owner"]
-#     list_display = ["get_owner_name", "role"]
-#     list_filter = [OwnerFilter]
-
-#     @display(description="Owner")
-#     def get_owner_name(self, obj):
-#         return obj.owner.full_name
-
-#     get_owner_name.admin_order_field = "owner"
-
-#     inlines = [WorkExperienceBulletInline]
-
 
 class PetInline(admin.TabularInline):
     model = Pet

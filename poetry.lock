@@ -152,6 +152,17 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-admin-autocomplete-filter"
+version = "0.7.1"
+description = "A simple Django app to render list filters in django admin using autocomplete widget"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+django = ">=2.0"
+
+[[package]]
 name = "django-webtest"
 version = "1.9.8"
 description = "Instant integration of Ian Bicking's WebTest (http://docs.pylonsproject.org/projects/webtest/) with Django's testing framework."
@@ -654,7 +665,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c24efe165e6ffcd3dadb93d558234a83928cb5d037462f3b8687cd1f928ee0f1"
+content-hash = "644e8ecf5dc7b58d6477594b7df442110b93e921a52883669e48d13fca0e31bc"
 
 [metadata.files]
 asgiref = [
@@ -747,6 +758,10 @@ distlib = [
 django = [
     {file = "Django-3.2.9-py3-none-any.whl", hash = "sha256:e22c9266da3eec7827737cde57694d7db801fedac938d252bf27377cec06ed1b"},
     {file = "Django-3.2.9.tar.gz", hash = "sha256:51284300f1522ffcdb07ccbdf676a307c6678659e1284f0618e5a774127a6a08"},
+]
+django-admin-autocomplete-filter = [
+    {file = "django-admin-autocomplete-filter-0.7.1.tar.gz", hash = "sha256:5a8c9a7016e03104627b80b40811dcc567f26759971e4407f933951546367ba0"},
+    {file = "django_admin_autocomplete_filter-0.7.1-py3-none-any.whl", hash = "sha256:b2a71be2c4a68f828289eb51f71316dbdfac00a1843f53df1fbe4767aad2e3c0"},
 ]
 django-webtest = [
     {file = "django-webtest-1.9.8.tar.gz", hash = "sha256:4ee691a90f5f14ba1902f03564aecce62276aab6a1559955bb9c02dea33fe6c0"},
